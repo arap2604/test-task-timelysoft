@@ -36,7 +36,7 @@ class Main_page(unittest.TestCase):
         #### checkout INPUTS
 
         self.driver.find_element_by_css_selector(Locators.INPUT_NAME).send_keys("Arapbai")
-        self.driver.find_element_by_css_selector(Locators.INPUT_NAME).send_keys("773777777")
+        self.driver.find_element_by_css_selector(Locators.INPUT_TEL).send_keys("773777777")
         self.driver.find_element_by_css_selector(Locators.ORDER_TYPE_PICKUP).click()
         self.driver.find_element_by_css_selector(Locators.ORDER_TYPE_DELIVERY).click()
 
@@ -52,6 +52,8 @@ class Main_page(unittest.TestCase):
         self.driver.find_element_by_css_selector(Locators.FLOOR).send_keys("8")
         self.driver.find_element_by_css_selector(Locators.ENTRY_CODE).send_keys("14B")
         self.driver.find_element_by_css_selector(Locators.SUMM).send_keys("2000")
+
+
 
         sleep(5)
 
